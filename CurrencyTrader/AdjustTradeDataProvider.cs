@@ -37,10 +37,6 @@ namespace CurrencyTrader
                 {
                     tradeData[i] = tradeData[i].Replace("GBP", "EUR");
                 }
-                else
-                {
-                    Console.WriteLine("Fine");
-                }
             }
 
             return tradeData;
