@@ -117,7 +117,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(303, 164);
+            this.label3.Location = new System.Drawing.Point(303, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 8;
@@ -127,13 +127,15 @@
             // 
             this.txtNumTrades.Location = new System.Drawing.Point(306, 200);
             this.txtNumTrades.Name = "txtNumTrades";
+            this.txtNumTrades.ReadOnly = true;
             this.txtNumTrades.Size = new System.Drawing.Size(171, 20);
             this.txtNumTrades.TabIndex = 9;
             // 
             // txtStoreStatus
             // 
-            this.txtStoreStatus.Location = new System.Drawing.Point(560, 211);
+            this.txtStoreStatus.Location = new System.Drawing.Point(560, 200);
             this.txtStoreStatus.Name = "txtStoreStatus";
+            this.txtStoreStatus.ReadOnly = true;
             this.txtStoreStatus.Size = new System.Drawing.Size(187, 20);
             this.txtStoreStatus.TabIndex = 11;
             this.txtStoreStatus.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -164,8 +166,10 @@
             this.Controls.Add(this.btnStoreTrades);
             this.Controls.Add(this.btnParseTrades);
             this.Controls.Add(this.btnReadTrades);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "Currency Trader";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
