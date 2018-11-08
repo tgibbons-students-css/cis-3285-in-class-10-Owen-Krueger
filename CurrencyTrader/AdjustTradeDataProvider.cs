@@ -33,10 +33,7 @@ namespace CurrencyTrader
 
             for (int i = 0; i < tradeData.Count; i++)
             {
-                if (tradeData[i].Contains("GBP"))
-                {
-                    tradeData[i] = tradeData[i].Replace("GBP", "EUR");
-                }
+                tradeData[i] = tradeData[i].Replace("GBP", "EUR");
             }
 
             return tradeData;
